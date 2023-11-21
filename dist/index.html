@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meteo</title>
+</head>
+<body>
+
+
+<div id="app">
+    <h1>Meteo</h1>
+    <!-- Input pour la recherche de ville         -->
+    <input placeholder="Chercher une ville..." v-model="city" type="text" name="text" class="input">
+    <p style="color: red; font-size: 1rem " class="errorMessage"></p>
+    <div class="container">
+        <div class="upContent">
+            <div class="left">
+                <h2 class="region"></h2>
+                <pre class="weatherState"></pre>
+                <p><span class="temp_c"></span> </p>
+                <img src="" class="icon" width="300" height="300"></img>
+            </div>
+            <div class="right">
+                <p>Impression : <span class="feelslike_c"></span> °C</p>
+                <p>Humidité : <span class="humidity"></span> %</p>
+                <p>Pression : <span class="pressure_mb"></span> hPa</p>
+                <p>Vitesse du vent : <span class="wind_kph"></span> km/h</p>
+            </div>
+        </div>
+
+        <h2>Prévisions</h2>
+        <div class="bottomContent"> </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
